@@ -1,0 +1,106 @@
+.divider {
+  flex-shrink: 0;
+
+  border: 0;
+
+  background: var(--border-default);
+
+  transition:
+    background-color var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+
+/* =================================
+   ORIENTATION
+================================= */
+
+.horizontal {
+  width: 100%;
+  height: 1px;
+}
+
+.vertical {
+  width: 1px;
+  height: 100%;
+}
+
+
+/* =================================
+   VARIANTS
+================================= */
+
+.subtle {
+  background: var(--border-subtle);
+}
+
+.default {
+  background: var(--border-default);
+}
+
+.strong {
+  background: var(--border-strong);
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent-primary),
+    transparent
+  );
+}
+
+
+/* =================================
+   VERTICAL GRADIENT
+================================= */
+
+.vertical.gradient {
+  width: 1px;
+  height: 100%;
+
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--accent-primary),
+    transparent
+  );
+}
+
+
+/* =================================
+   SPACING
+================================= */
+
+.small {
+  margin-block: var(--space-3);
+}
+
+.medium {
+  margin-block: var(--space-6);
+}
+
+.large {
+  margin-block: var(--space-10);
+}
+
+
+/* =================================
+   VERTICAL SPACING
+================================= */
+
+.vertical.small {
+  margin-block: 0;
+  margin-inline: var(--space-3);
+}
+
+.vertical.medium {
+  margin-block: 0;
+  margin-inline: var(--space-6);
+}
+
+.vertical.large {
+  margin-block: 0;
+  margin-inline: var(--space-10);
+}

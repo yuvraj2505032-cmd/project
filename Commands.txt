@@ -1,0 +1,28 @@
+BACKEND 
+
+cd backend
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python -m uvicorn app.main:app --reload --port 8000
+
+
+frontend (diffrent terminal)
+npm install
+npm run dev
+
+
+database (after running all sql files)
+
+INSERT INTO public.admin_users (user_id, role, active)
+VALUES ('PASTE-USER-UUID-HERE'::uuid, 'super_admin', true);
+
+
+There are three roles super_admin, publisher, reviewer for more
+security.
+
+
+SUPABASE EMAIL SMTP
+
+<h2>Your JanSahayak sign-in code</h2>
+<p>Enter this code in the app: {{ .Token }}</p>

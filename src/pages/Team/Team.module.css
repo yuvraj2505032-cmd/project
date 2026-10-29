@@ -1,0 +1,443 @@
+.page {
+  min-height: 100vh;
+
+  background:
+    var(--bg-primary);
+
+  color:
+    var(--text-primary);
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.heroSection {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-bottom: var(--space-10);
+
+  color: var(--text-secondary);
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition:
+    color var(--transition-fast);
+}
+
+.backLink:hover {
+  color: var(--accent-primary);
+}
+
+.heroMeta {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: var(--space-8);
+
+  color: var(--text-muted);
+
+  font-size: 12px;
+}
+
+
+/* =================================
+   MEMBERS
+================================= */
+
+.membersSection {
+  overflow: hidden;
+}
+
+.members {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-16);
+}
+
+
+/* =================================
+   MEMBER
+================================= */
+
+.member {
+  display: grid;
+
+  grid-template-columns:
+    180px minmax(0, 1fr);
+
+  gap: var(--space-10);
+
+  padding-bottom: var(--space-16);
+
+  border-bottom:
+    1px solid var(--border-subtle);
+}
+
+.member:last-child {
+  padding-bottom: 0;
+
+  border-bottom: 0;
+}
+
+
+/* =================================
+   AVATAR COLUMN
+================================= */
+
+.avatarColumn {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: var(--space-4);
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: var(--radius-full);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--accent-primary),
+      var(--accent-secondary)
+    );
+
+  color: var(--bg-primary);
+
+  box-shadow:
+    0 20px 60px var(--glow-primary);
+}
+
+.avatar span {
+  font-family: var(--font-display);
+
+  font-size: 52px;
+  font-weight: 800;
+
+  line-height: 1;
+}
+
+.memberNumber {
+  color: var(--text-muted);
+
+  font-family: var(--font-mono);
+
+  font-size: 9px;
+  letter-spacing: 0.15em;
+}
+
+
+/* =================================
+   CONTENT
+================================= */
+
+.memberContent {
+  min-width: 0;
+}
+
+.memberHeader {
+  display: flex;
+  justify-content: space-between;
+
+  gap: var(--space-6);
+}
+
+.eyebrow {
+  display: block;
+
+  color: var(--accent-primary);
+
+  font-family: var(--font-mono);
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+.memberHeader h2 {
+  margin: 8px 0 0;
+
+  font-size:
+    clamp(32px, 5vw, 58px);
+
+  line-height: 0.95;
+
+  letter-spacing:
+    -0.05em;
+}
+
+.role {
+  margin: 10px 0 0;
+
+  color: var(--text-secondary);
+
+  font-family: var(--font-mono);
+
+  font-size: 12px;
+
+  letter-spacing: 0.05em;
+
+  text-transform: uppercase;
+}
+
+
+/* =================================
+   SOCIAL LINKS
+================================= */
+
+.memberLinks {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 7px;
+}
+
+.memberLinks a {
+  width: 36px;
+  height: 36px;
+
+  display: grid;
+  place-items: center;
+
+  border:
+    1px solid var(--border-default);
+
+  border-radius:
+    var(--radius-sm);
+
+  color: var(--text-secondary);
+
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.memberLinks a:hover {
+  color: var(--accent-primary);
+
+  background:
+    var(--surface-2);
+
+  border-color:
+    var(--accent-primary);
+
+  transform:
+    translateY(-2px);
+}
+
+
+/* =================================
+   BIO
+================================= */
+
+.bio {
+  max-width: 760px;
+
+  margin:
+    var(--space-8)
+    0
+    0;
+
+  color: var(--text-secondary);
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =================================
+   SKILLS
+================================= */
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: var(--space-6);
+}
+
+
+/* =================================
+   CONTRIBUTION
+================================= */
+
+.contribution {
+  max-width: 760px;
+
+  margin-top: var(--space-8);
+}
+
+.contribution span {
+  display: block;
+
+  color: var(--accent-primary);
+
+  font-family: var(--font-mono);
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+.contribution p {
+  margin:
+    10px 0
+    0;
+
+  color: var(--text-secondary);
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* =================================
+   BOTTOM CTA
+================================= */
+
+.bottomSection {
+  border-top:
+    1px solid var(--border-subtle);
+}
+
+.bottomCta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.bottomCta a {
+  margin-top: var(--space-8);
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 800px) {
+  .member {
+    grid-template-columns:
+      120px minmax(0, 1fr);
+
+    gap: var(--space-6);
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .avatar span {
+    font-size: 38px;
+  }
+
+  .memberHeader {
+    flex-direction: column;
+  }
+
+  .memberLinks {
+    align-items: center;
+  }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 640px) {
+  .heroMeta {
+    flex-direction: column;
+  }
+
+  .member {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-6);
+
+    padding-bottom:
+      var(--space-12);
+  }
+
+  .avatarColumn {
+    align-items: flex-start;
+  }
+
+  .avatar {
+    width: 84px;
+    height: 84px;
+  }
+
+  .avatar span {
+    font-size: 32px;
+  }
+
+  .memberHeader h2 {
+    font-size: 38px;
+  }
+
+  .bio {
+    margin-top: var(--space-6);
+
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .contribution {
+    margin-top: var(--space-6);
+  }
+}
+
+
+/* =================================
+   REDUCED MOTION
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .backLink,
+  .memberLinks a {
+    transition: none;
+  }
+}

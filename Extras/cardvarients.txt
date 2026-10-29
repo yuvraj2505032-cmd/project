@@ -1,0 +1,22 @@
+Variants
+
+We're starting with:
+
+default
+outlined
+elevated
+glass
+interactive
+
+And sizes:
+
+small
+medium
+large
+
+Padding:
+
+small
+medium
+large
+none

@@ -1,0 +1,110 @@
+import Footer from "./components/composed/Footer/Footer";
+
+function App() {
+  return (
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-end",
+        background: "var(--bg-primary)",
+        color: "var(--text-primary)",
+      }}
+    >
+      <div
+        style={{
+          minHeight: "60vh",
+          padding: "100px 24px",
+        }}
+      >
+        <h1>Footer Test Page</h1>
+      </div>
+
+      <Footer
+        logo="HackX"
+        description="A reusable foundation for building polished hackathon products faster."
+        email="hello@hackx.dev"
+        cta={{
+          label: "Launch Demo",
+          variant: "primary",
+        }}
+        columns={[
+          {
+            title: "Product",
+            links: [
+              {
+                label: "Features",
+                href: "#features",
+              },
+              {
+                label: "Solutions",
+                href: "#solutions",
+              },
+              {
+                label: "Pricing",
+                href: "#pricing",
+              },
+            ],
+          },
+          {
+            title: "Resources",
+            links: [
+              {
+                label: "Documentation",
+                href: "#docs",
+              },
+              {
+                label: "FAQ",
+                href: "#faq",
+              },
+              {
+                label: "Contact",
+                href: "#contact",
+              },
+            ],
+          },
+          {
+            title: "Company",
+            links: [
+              {
+                label: "About",
+                href: "#about",
+              },
+              {
+                label: "Team",
+                href: "#team",
+              },
+              {
+                label: "Careers",
+                href: "#careers",
+              },
+            ],
+          },
+        ]}
+        socials={[
+          {
+            label: "GitHub",
+            href: "https://github.com/",
+            icon: <Github />,
+            external: true,
+          },
+          {
+            label: "X",
+            href: "https://x.com/",
+            icon: <Twitter />,
+            external: true,
+          },
+          {
+            label: "LinkedIn",
+            href: "https://linkedin.com/",
+            icon: <Linkedin />,
+            external: true,
+          },
+        ]}
+      />
+    </main>
+  );
+}
+
+export default App;

@@ -1,0 +1,66 @@
+.section {
+  width: 100%;
+}
+
+
+/* =================================
+   SPACING VARIANTS
+================================= */
+
+.default {
+  padding-block: var(--space-20);
+}
+
+.small {
+  padding-block: var(--space-12);
+}
+
+.large {
+  padding-block: var(--space-24);
+}
+
+.xlarge {
+  padding-block: var(--space-32);
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .default {
+    padding-block: var(--space-16);
+  }
+
+  .small {
+    padding-block: var(--space-10);
+  }
+
+  .large {
+    padding-block: var(--space-20);
+  }
+
+  .xlarge {
+    padding-block: var(--space-24);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .default {
+    padding-block: var(--space-12);
+  }
+
+  .small {
+    padding-block: var(--space-8);
+  }
+
+  .large {
+    padding-block: var(--space-16);
+  }
+
+  .xlarge {
+    padding-block: var(--space-20);
+  }
+}

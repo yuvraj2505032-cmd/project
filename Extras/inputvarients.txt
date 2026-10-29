@@ -1,0 +1,45 @@
+What this gives us
+Basic
+<Input
+  label="Project name"
+  placeholder="Enter your project name"
+/>
+With hint
+<Input
+  label="Email"
+  type="email"
+  placeholder="you@example.com"
+  hint="We'll never share your email."
+/>
+Required
+<Input
+  label="Username"
+  required
+  placeholder="Enter username"
+/>
+Error
+<Input
+  label="Email"
+  value=""
+  error="Please enter a valid email address."
+/>
+Success
+<Input
+  label="Username"
+  value="vansh"
+  success="Username is available."
+/>
+Left icon
+import { Search } from "lucide-react";
+
+<Input
+  placeholder="Search projects..."
+  leftIcon={<Search />}
+/>
+Right icon
+import { Mail } from "lucide-react";
+
+<Input
+  placeholder="Email address"
+  rightIcon={<Mail />}
+/>

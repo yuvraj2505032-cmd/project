@@ -1,0 +1,17 @@
+import ThemeLab from "./pages/ThemeLab/ThemeLab";
+<ThemeLab />;
+
+import Container from "./components/layout/Container/Container";
+import Section from "./components/layout/Section/Section";
+import Button from "./components/common/Button/Button";
+
+import { ArrowRight, Download, Trash2, Check, Clock3, Sparkles, Zap } from "lucide-react";
+import Badge from "./components/common/Badge/Badge";
+import Heading from "./components/common/Heading/Heading";
+import IconButton from "./components/common/IconButton/IconButton";
+import Divider from "./components/common/Divider/Divider";
+import Card from "./components/common/Card/Card";
+import Input from "./components/common/Input/Input";
+
+import Navbar from "./components/composed/Navbar/Navbar";
+import Footer from "./components/composed/Footer/Footer";
